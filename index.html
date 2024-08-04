@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="memes/misoor_logo.jpg" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="https://x.com/themissorsolana" target="_blank">Twitter</a>
+            <a href="https://t.co/pGRInaKc39" target="_blank">Telegram</a>
+            <a href="https://dexscreener.com/solana/FzJCXQ6svUbNBBNCF1qT9HHVH1Vjte3FnUpJCQR8JK9x" target="_blank">Dex Screener</a>
+        </div>
+        <div class="hamburger-menu">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+
+    <div class="landing-page">
+        <div class="image-container">
+            <img src="memes/misoor_p0.png" alt="Slideshow Image" id="slideshow">
+        </div>
+        <div class="buttons">
+            <a href="https://t.co/pGRInaKc39" target="_blank" class="button">Telegram</a>
+            <a href="https://raydium.io/swap/?outputMint=EFtzC8oSXNsDFY8g22sTEwuTqJti2gyXrKBtDpyxayJF&inputMint=sol" target="_blank" class="button">Swap</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <input type="text" id="ca-textbox" value="EFtzC8oSXNsDFY8g22sTEwuTqJti2gyXrKBtDpyxayJF" readonly>
+            <button onclick="copyToClipboard()">Copy CA</button>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

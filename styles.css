@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ca-textbox {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 410px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    width: auto; /* Centered width */
+}
+
+/* Desktop Specific Styles */
+@media (min-width: 769px) {
+    .image-container img {
+        width: 600px; /* Twice the original size */
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .landing-page {
+        padding: 20px;
+    }
+    .image-container img {
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #ca-textbox {
+        width: calc(100% - 40px); /* Full width with padding */
+    }
+    footer button {
+        width: 100%; /* Button spans full width on mobile */
+    }
+}
